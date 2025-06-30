@@ -1,0 +1,3 @@
+streamlit
+agency-swarm==0.4.1
+python_dotenv
