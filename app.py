@@ -170,7 +170,8 @@ def main() -> None:
                     tools=[AnalyzeProjectRequirements],
                     api_headers=api_headers,
                     temperature=0.7,
-                    max_prompt_tokens=25000
+                    max_prompt_tokens=25000,
+                    model = "gpt-4.1-nano"
                 )
 
                 cto = Agent(
@@ -189,7 +190,8 @@ def main() -> None:
                     tools=[CreateTechnicalSpecification],
                     api_headers=api_headers,
                     temperature=0.5,
-                    max_prompt_tokens=25000
+                    max_prompt_tokens=25000,
+                    model = "gpt-4.1-nano"
                 )
 
                 product_manager = Agent(
@@ -201,7 +203,8 @@ def main() -> None:
                     """,
                     api_headers=api_headers,
                     temperature=0.4,
-                    max_prompt_tokens=25000
+                    max_prompt_tokens=25000,
+                    model = "gpt-4.1-nano"
                 )
 
                 developer = Agent(
@@ -214,7 +217,8 @@ def main() -> None:
                     """,
                     api_headers=api_headers,
                     temperature=0.3,
-                    max_prompt_tokens=25000
+                    max_prompt_tokens=25000,
+                    model = "gpt-4.1-nano"
                 )
 
                 client_manager = Agent(
@@ -227,7 +231,8 @@ def main() -> None:
                     """,
                     api_headers=api_headers,
                     temperature=0.6,
-                    max_prompt_tokens=25000
+                    max_prompt_tokens=25000,
+                    model = "gpt-4.1-nano"
                 )
 
                 # Create agency
